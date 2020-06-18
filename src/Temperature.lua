@@ -2,6 +2,7 @@ local config = require 'src/config'
 local adc = require 'src/wrapped_adc'
 local log = require 'src/log'
 
+-- Concept and equation from https://learn.adafruit.com/thermistor/using-a-thermistor
 return function(filter_callback)
   local resistor = config.resistor
   local thermistor = config.thermistor
